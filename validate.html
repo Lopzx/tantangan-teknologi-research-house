@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/validate.css">
+</head>
+    <body class="grid place-items-center">
+        <form class="flex flex-col gap-3" action="">
+            <div class="input-field flex flex-col">
+                <label class="bold" for="name">Name</label>
+                <input id="name" name="name" type="text">
+                <p id="name-in-error" class="input-error red-text muted-text"></p>
+            </div>
+            <div class="input-field flex flex-col">
+                <label class="bold" for="email">Email</label>
+                <input id="email" name="name" type="text">
+                <p id="email-in-error" class="input-error red-text muted-text"></p>
+            </div>
+            <div class="input-field flex flex-col gap-2">
+                <label class="bold" for="name">Gender</label>
+                <div class="radio-wrapper flex align-item-center gap-4">
+                    <div class="input-radio flex align-item-center gap-2">
+                        <input class="input-gender" name="gender" id="radio-male" type="radio" required>
+                        <label for="radio-male">Male</label>
+                    </div>
+                    <div class="input-radio flex align-item-center gap-2">
+                        <input class="input-gender" name="gender" id="radio-female" type="radio" required>
+                        <label for="radio-female">Female</label>
+                    </div>
+                </div>
+                <p id="gender-in-error" class="input-error red-text muted-text"></p>
+            </div>
+            <button class="button">Submit</button>
+        </form>
+    </body>
+<script src="js/validate.js"></script>
+</html>

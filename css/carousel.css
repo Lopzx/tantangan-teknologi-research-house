@@ -1,0 +1,59 @@
+.carousel-wrapper {
+    box-shadow : 1px 1px 10px rgba(0,0,0,0.1);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    width: 170px;
+    background: url("../img/carousel/background/botol1.jpg");
+    transition: 1s;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 1.5s;
+}
+
+
+.carousel-item > img {
+    height: 200px;
+    transition: all ease-in-out 0.6s;
+}
+
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+
+/* @keyframes slide_anim_left {
+    0% {
+        transform: rotate(0deg);
+    } 50% {
+        transform: rotate(-20deg);
+    } 100% {
+        transform: rotate(0deg) ;
+    }
+}
+
+@keyframes slide_anim_right {
+    0% {
+        transform: rotate(0deg);
+    } 50% {
+        transform: rotate(20deg);
+    } 100% {
+        transform: rotate(0deg);
+    }
+} */

@@ -1,0 +1,30 @@
+.todo-add-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns : auto 30px;
+    grid-template-rows : 30px;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns : 30px auto 30px;
+    grid-template-rows : 30px;
+    align-items: center;
+    gap: 5px;
+    margin: 8px 0;
+}
+
+.list-item > button {
+    width: 100%;
+    height: 100%;
+}
+
+.list-item > input {
+    place-items: center;
+    width: 70%;
+    height: 70%;
+}
+
+.todo-list-wrapper {
+    margin: 10px 0;
+}

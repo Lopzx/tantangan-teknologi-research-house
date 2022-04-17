@@ -1,0 +1,7 @@
+.input-radio > input {
+    margin: 0;
+}
+
+.input-error {
+    margin: 4px 0;
+}
